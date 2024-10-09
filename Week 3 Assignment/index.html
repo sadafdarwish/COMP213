@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device width, initial scale=1.0">
-    <title>Tesla Model S  Electric Excellence</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tesla Model S - Electric Excellence</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             width: 1024px;
             margin: 0 auto;
-			background-color: #EBE3D2; /* Change this to your desired color */
+            background-color: #EBE3D2; /* Change this to your desired color */
         }
         .banner {
             text-align: center;
@@ -17,7 +17,7 @@
         .banner img {
             width: 100%;
         }
-        .features {
+        .features, .safety, .performance {
             margin-top: 20px;
         }
         table {
@@ -31,14 +31,27 @@
             padding: 10px;
             text-align: center;
         }
+        /* Hotspot Map styling */
+        .map img {
+            width: 100%;
+        }
+        .map area {
+            cursor: pointer;
+        }
+    
+    @media screen {
+        /* Add any responsive styling if needed */
+    }
     </style>
 </head>
 <body>
 
+    <!-- Name: Sadaf, Student Number: [Your Student Number] -->
+
     <div class="banner">
-        <h1>Tesla Model S Electric Excellence</h1>
+        <h1>Tesla Model S - Electric Excellence</h1>
         <a href="https://www.tesla.com">
-            <img src="https://github.com/sadafdarwish/COMP213/blob/main/Week%203%20Assignment/tsla%20logo.jpg?raw=true" alt="Tesla Logo" width="150" height="150" >
+            <img src="https://github.com/sadafdarwish/COMP213/blob/main/Week%203%20Assignment/tsla%20logo.jpg?raw=true" alt="Tesla Logo" width="150" height="150">
         </a>
         <img src="https://sadafdarwish.github.io/COMP213/Week%203%20Assignment/Teslaimage.jpg" alt="Tesla Model S" width="1024">
     </div>
@@ -51,9 +64,36 @@
             <li>Range: Up to 396 miles on a full charge</li>
             <li>Acceleration: 0-60 mph in 1.99 seconds</li>
             <li>Top Speed: 200 mph</li>
-            <li>All Wheel Drive</li>
+            <li>All-Wheel Drive</li>
             <li>Autopilot: Advanced driver-assistance features</li>
             <li>Battery: 100 kWh pack</li>
+            <li>Interior: 17-inch cinematic display, premium sound system, and heated seats</li>
+            <li>Charging: 250 kW max Supercharging capability</li>
+        </ul>
+    </div>
+
+    <!-- New Section for Safety Features -->
+    <h2>Safety Features</h2>
+    <div class="safety">
+        <ul>
+            <li>Five-star safety rating from the National Highway Traffic Safety Administration (NHTSA)</li>
+            <li>Full self-driving hardware with 360-degree cameras</li>
+            <li>Automatic emergency braking and collision avoidance</li>
+            <li>Eight external cameras and 12 ultrasonic sensors</li>
+            <li>Side collision warning</li>
+            <li>Over-the-air software updates for improved safety performance</li>
+        </ul>
+    </div>
+
+    <!-- New Section for Performance Highlights -->
+    <h2>Performance Highlights</h2>
+    <div class="performance">
+        <ul>
+            <li>Three high-performance motors for instant torque and improved efficiency</li>
+            <li>Adaptive air suspension for comfort and handling</li>
+            <li>Carbon-sleeved rotors for sustained power at high speeds</li>
+            <li>0-60 mph in less than 2 seconds for the Plaid model</li>
+            <li>Track mode for enhanced cornering and cooling during high-speed driving</li>
         </ul>
     </div>
 
@@ -73,8 +113,29 @@
         </tr>
     </table>
 
-    <p><a href="Details.html"></a></p>
-    <p><a href="index.html"></a></p>
+    <!-- Hotspot Map of Canada -->
+    <h2>Distributors in Canada</h2>
+    <div class="map">
+        <!-- Link to a larger map image -->
+        <a href="https://geology.com/canada/quebec-map.gif">
+            <!-- Display the map of Canada with hotspots -->
+            <img src="https://geology.com/world/canada-satellite-image.shtml" alt="Map of Canada" usemap="#canada-map" width="600">
+        </a>
+        
+        <!-- Define the map and clickable areas -->
+        <map name="canada-map">
+            <!-- Ontario: Clickable area -->
+            <area shape="rect" coords="250,100,350,200" href="https://www.ontario.ca" alt="Ontario">
+            <!-- Alberta: Clickable area -->
+            <area shape="rect" coords="450,100,550,200" href="https://www.alberta.ca" alt="Alberta">
+            <!-- Quebec: Clickable area -->
+            <area shape="rect" coords="650,100,750,200" href="https://www.quebec.ca" alt="Quebec">
+        </map>
+    </div>
+
+    <!-- Hyperlinks to other pages -->
+    <p><a href="Details.html">View Larger Picture</a></p>
+    <p><a href="index.html">Home Page</a></p>
 
 </body>
 </html>
