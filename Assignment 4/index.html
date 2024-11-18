@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Evaluation Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #004080;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        header img {
+            width: 50px;
+            vertical-align: middle;
+        }
+
+        header h1 {
+            display: inline;
+            margin-left: 10px;
+            font-size: 20px;
+        }
+
+        form {
+            background-color: white;
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        fieldset {
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+
+        legend {
+            font-weight: bold;
+            color: #004080;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        textarea {
+            width: 100%;
+            height: 80px;
+            margin-top: 5px;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        button {
+            background-color: #004080;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 3px;
+        }
+
+        button:hover {
+            background-color: #002850;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+
+        footer a {
+            color: #004080;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="https://www.centennialcollege.ca/">
+            <img src="Centennial Banner.png" alt="Centennial College Logo">
+        </a>
+        <h1>Continuing Education Course Evaluation</h1>
+    </header>
+
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Instructor</legend>
+            <label>1. Knowledge of subject:</label>
+            <input type="radio" name="knowledge" value="excellent"> Excellent
+            <input type="radio" name="knowledge" value="good"> Good
+            <input type="radio" name="knowledge" value="fair"> Fair
+            <input type="radio" name="knowledge" value="not_satisfactory"> Not Satisfactory
+
+            <label>2. Helpfulness:</label>
+            <input type="radio" name="helpfulness" value="excellent"> Excellent
+            <input type="radio" name="helpfulness" value="good"> Good
+            <input type="radio" name="helpfulness" value="fair"> Fair
+            <input type="radio" name="helpfulness" value="not_satisfactory"> Not Satisfactory
+        </fieldset>
+
+        <fieldset>
+            <legend>Course</legend>
+            <label>6. How would you rate the course materials?</label>
+            <input type="radio" name="materials" value="excellent"> Excellent
+            <input type="radio" name="materials" value="good"> Good
+            <input type="radio" name="materials" value="fair"> Fair
+            <input type="radio" name="materials" value="not_satisfactory"> Not Satisfactory
+
+            <label>7. How much did this course meet your expectations?</label>
+            <input type="radio" name="expectations" value="excellent"> Excellent
+            <input type="radio" name="expectations" value="good"> Good
+            <input type="radio" name="expectations" value="fair"> Fair
+            <input type="radio" name="expectations" value="not_satisfactory"> Not Satisfactory
+        </fieldset>
+
+        <fieldset>
+            <legend>Comments</legend>
+            <label for="best">11. What is the best thing about this course?</label>
+            <textarea id="best" name="best"></textarea>
+
+            <label for="improve">12. How could we improve this course?</label>
+            <textarea id="improve" name="improve"></textarea>
+        </fieldset>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <footer>
+        <p>Website: <a href="https://www.centennialcollege.ca/continuing_education">www.centennialcollege.ca/continuing_education</a></p>
+        <p>Email: <a href="mailto:continuingeducation@centennialcollege.ca">continuingeducation@centennialcollege.ca</a></p>
+    </footer>
+</body>
+</html>
