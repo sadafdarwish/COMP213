@@ -24,8 +24,30 @@
             z-index: -1;
         }
 
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 10px 0;
+            z-index: 1;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: white;
+            margin: 0 15px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .navbar a:hover {
+            color: #d4a373;
+        }
+
         .container {
-            margin-top: 100px;
+            margin-top: 150px;
         }
 
         h1 {
@@ -65,7 +87,18 @@
     </style>
 </head>
 <body>
-       <div class="overlay"></div>
+    <div class="overlay"></div>
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="details.html">Details</a>
+        <a href="contact_us.html">Contact Us</a>
+        <a href="location.html">Location</a>
+    </div>
+
+    <!-- Menu Content -->
     <div class="container">
         <h1>Our Menu</h1>
         <table>
@@ -101,8 +134,10 @@
             </tr>
         </table>
     </div>
+
+    <!-- Footer -->
     <footer>
-        <p>Capyright © 2024 - Sadaf Darwish - Student#301493791| COMP213 Project | Individual Project</p>
+        <p>Copyright © 2024 - Sadaf Darwish - Student#301493791 | COMP213 Project | Individual Project</p>
     </footer>
 </body>
 </html>
