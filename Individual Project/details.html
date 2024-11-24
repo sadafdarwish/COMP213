@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dish Details - Restaurant Name</title>
+    <title>Details - Restaurant Name</title>
     <style>
         body {
             margin: 0;
@@ -24,14 +24,51 @@
             z-index: -1;
         }
 
-        .container {
-            margin-top: 100px;
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 10px 0;
+            z-index: 1;
         }
 
-        .dish img {
-            max-width: 300px;
-            border-radius: 10px;
-            margin-bottom: 20px;
+        .navbar a {
+            text-decoration: none;
+            color: white;
+            margin: 0 15px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .navbar a:hover {
+            color: #d4a373;
+        }
+
+        .container {
+            position: relative;
+            top: 100px;
+            text-align: center;
+        }
+
+        .dish-name {
+            font-size: 3rem;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        .price {
+            font-size: 2rem;
+            font-weight: bold;
+            margin: 10px 0;
+            color: #d4a373;
+        }
+
+        .ingredients {
+            font-size: 1.2rem;
+            margin: 20px 0;
+            color: #e8e8e8;
         }
 
         footer {
@@ -41,18 +78,23 @@
             background-color: rgba(0, 0, 0, 0.8);
             color: white;
             padding: 10px;
+            font-size: 0.9rem;
         }
     </style>
 </head>
 <body>
     <div class="overlay"></div>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="details.html">Details</a>
+        <a href="contact_us.html">Contact Us</a>
+        <a href="location.html">Location</a>
+    </div>
     <div class="container">
-        <h1>Margherita Pizza</h1>
-        <div class="dish">
-            <img src="https://sadafdarwish.github.io/COMP213/Individual%20Project/images/pizza.jpg" alt="Margherita Pizza">
-            <p><strong>Price:</strong> $12.99</p>
-            <p><strong>Ingredients:</strong> Cheese, Tomato, Basil</p>
-        </div>
+        <h1 class="dish-name">Margherita Pizza</h1>
+        <p class="price">$12.99</p>
+        <p class="ingredients">Ingredients: Cheese, Tomato, Basil</p>
     </div>
     <footer>
         <p>© 2024 Your Name | COMP213 Project | Images courtesy of Unsplash</p>
