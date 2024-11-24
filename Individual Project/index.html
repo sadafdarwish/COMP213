@@ -6,84 +6,96 @@
     <title>Restaurant Name - Home</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f9f9f9;
+            font-family: 'Arial', sans-serif;
+            color: white;
             text-align: center;
+            background: url('https://sadafdarwish.github.io/COMP213/Individual%20Project/images/pizza%20background.jpg') no-repeat center center/cover; /* Replace with your background image */
         }
-        .banner {
-            background-color: #005f73;
-            color: #fff;
-            padding: 20px 0;
+
+        .overlay {
+            background: rgba(0, 0, 0, 0.6); /* Adds a dark overlay */
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
         }
-        .banner img {
-            max-width: 100px;
-            display: block;
-            margin: 0 auto 10px;
+
+        .container {
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+            padding: 0 20px;
         }
-        .banner h1 {
+
+        .logo img {
+            width: 100px;
+            margin-bottom: 20px;
+        }
+
+        .welcome-message h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
             margin: 0;
         }
-        nav ul {
-            list-style: none;
-            margin: 0;
-            padding: 10px 0;
-            background-color: #0a9396;
+
+        .welcome-message h2 {
+            font-size: 1.5rem;
+            margin: 10px 0 20px;
+            font-weight: 300;
+        }
+
+        .choose-location {
+            background-color: #d4a373;
+            border: none;
+            border-radius: 25px;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: white;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .choose-location:hover {
+            background-color: #c78c5f;
+        }
+
+        .icons {
             display: flex;
             justify-content: center;
-        }
-        nav ul li {
-            margin: 0 15px;
-        }
-        nav ul li a {
-            text-decoration: none;
-            color: #fff;
-            font-weight: bold;
-        }
-        nav ul li a:hover {
-            color: #94d2bd;
-        }
-        main {
-            margin: 20px;
-            padding: 20px;
-            background: #fff;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        footer {
-            background-color: #005f73;
-            color: #fff;
-            padding: 10px;
+            gap: 15px;
             margin-top: 20px;
         }
-        img {
-            max-width: 100%;
-            border-radius: 10px;
-            margin-top: 20px;
+
+        .icons img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: white;
+            padding: 5px;
         }
     </style>
 </head>
 <body>
-    <div class="banner">
-        <img src="assets/logo.png" alt="Restaurant Logo">
-        <h1>Restaurant Name</h1>
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="logo">
+            <img src="https://sadafdarwish.github.io/COMP213/Individual%20Project/logo/Restaurant logo.jpg" alt="Restaurant Logo">
+        </div>
+        <div class="welcome-message">
+            <h1>Welcome to Restaurant Name</h1>
+            <h2>Made with Tradition and Love</h2>
+        </div>
+        <button class="choose-location">Choose Location</button>
+        <div class="icons">
+            <a href="#"><img src="assets/us-flag-icon.png" alt="US Flag"></a>
+            <a href="#"><img src="assets/accessibility-icon.png" alt="Accessibility Icon"></a>
+        </div>
     </div>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="menu.html">Menu</a></li>
-            <li><a href="contact_us.html">Contact Us</a></li>
-            <li><a href="location.html">Location</a></li>
-        </ul>
-    </nav>
-    <main>
-        <h2>Welcome to Restaurant Name!</h2>
-        <p>Your go-to place for delicious and fresh cuisine.</p>
-        <img src="assets/featured.jpg" alt="Featured Dish">
-    </main>
-    <footer>
-        <p>© 2024 Your Name. Assignment 3 - COMP213. Images courtesy of Unsplash.</p>
-    </footer>
 </body>
 </html>
