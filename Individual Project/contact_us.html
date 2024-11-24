@@ -3,113 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
+    <title>Contact Us - Restaurant Name</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f9f9f9;
+            font-family: 'Arial', sans-serif;
+            color: white;
             text-align: center;
+            background: url('https://sadafdarwish.github.io/COMP213/Individual%20Project/images/menu-background.jpg') no-repeat center center/cover;
         }
-        .banner {
-            background-color: #005f73;
-            color: #fff;
-            padding: 20px 0;
+
+        .overlay {
+            background: rgba(0, 0, 0, 0.6);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
         }
-        .banner img {
-            max-width: 100px;
-            display: block;
-            margin: 0 auto 10px;
-        }
-        .banner h1 {
-            margin: 0;
-        }
-        nav ul {
-            list-style: none;
-            margin: 0;
-            padding: 10px 0;
-            background-color: #0a9396;
-            display: flex;
-            justify-content: center;
-        }
-        nav ul li {
-            margin: 0 15px;
-        }
-        nav ul li a {
-            text-decoration: none;
-            color: #fff;
-            font-weight: bold;
-        }
-        nav ul li a:hover {
-            color: #94d2bd;
-        }
-        main {
-            margin: 20px;
+
+        .container {
+            margin-top: 100px;
             padding: 20px;
-            background: #fff;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        form {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 500px;
+            margin: 0 auto;
+            color: black;
+        }
+
         form label {
             display: block;
-            margin: 10px 0 5px;
+            margin-bottom: 5px;
             font-weight: bold;
         }
+
         form input, form textarea, form button {
             width: 100%;
             padding: 10px;
             margin-bottom: 15px;
             border: 1px solid #ccc;
             border-radius: 5px;
+            font-size: 1rem;
         }
+
         form button {
-            background-color: #0a9396;
-            color: #fff;
-            border: none;
+            background-color: #d4a373;
+            color: white;
+            font-weight: bold;
             cursor: pointer;
+            transition: background-color 0.3s ease;
         }
+
         form button:hover {
-            background-color: #94d2bd;
+            background-color: #c78c5f;
         }
-        footer {
-            background-color: #005f73;
-            color: #fff;
-            padding: 10px;
+
+        .contact-info {
             margin-top: 20px;
+            font-size: 1rem;
+        }
+
+        footer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 10px;
         }
     </style>
 </head>
 <body>
-    <div class="banner">
-        <img src="assets/logo.png" alt="Restaurant Logo">
-        <h1>Restaurant Name</h1>
-    </div>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="menu.html">Menu</a></li>
-            <li><a href="contact_us.html">Contact Us</a></li>
-            <li><a href="location.html">Location</a></li>
-        </ul>
-    </nav>
-    <main>
-        <h2>Contact Us</h2>
+    <div class="overlay"></div>
+    <div class="container">
+        <h1>Contact Us</h1>
         <form>
             <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="phone">Phone:</label>
-            <input type="tel" id="phone" name="phone">
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Your Phone Number">
+
             <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="5"></textarea>
+            <textarea id="message" name="message" rows="4" placeholder="Your Message" required></textarea>
+
             <button type="submit">Submit</button>
         </form>
-        <p>Email: info@restaurant.com | Phone: (123) 456-7890</p>
-    </main>
+        <div class="contact-info">
+            <p>Email: info@restaurant.com | Phone: (123) 456-7890</p>
+        </div>
+    </div>
     <footer>
-        <p>© 2024 Your Name. Assignment 3 - COMP213. Images courtesy of Unsplash.</p>
+        <p>© 2024 Your Name | COMP213 Project | Images courtesy of Unsplash</p>
     </footer>
 </body>
 </html>

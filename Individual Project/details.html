@@ -3,89 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dish Details - Spaghetti Carbonara</title>
+    <title>Dish Details - Restaurant Name</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f9f9f9;
+            font-family: 'Arial', sans-serif;
+            color: white;
             text-align: center;
+            background: url('https://sadafdarwish.github.io/COMP213/Individual%20Project/images/pizza%20background.jpg') no-repeat center center/cover;
         }
-        .banner {
-            background-color: #005f73;
-            color: #fff;
-            padding: 20px 0;
+
+        .overlay {
+            background: rgba(0, 0, 0, 0.6);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
         }
-        .banner img {
-            max-width: 100px;
-            display: block;
-            margin: 0 auto 10px;
+
+        .container {
+            margin-top: 100px;
         }
-        .banner h1 {
-            margin: 0;
-        }
-        nav ul {
-            list-style: none;
-            margin: 0;
-            padding: 10px 0;
-            background-color: #0a9396;
-            display: flex;
-            justify-content: center;
-        }
-        nav ul li {
-            margin: 0 15px;
-        }
-        nav ul li a {
-            text-decoration: none;
-            color: #fff;
-            font-weight: bold;
-        }
-        nav ul li a:hover {
-            color: #94d2bd;
-        }
-        main {
-            margin: 20px;
-            padding: 20px;
-            background: #fff;
+
+        .dish img {
+            max-width: 300px;
             border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
         }
+
         footer {
-            background-color: #005f73;
-            color: #fff;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
             padding: 10px;
-            margin-top: 20px;
-        }
-        img {
-            max-width: 100%;
-            border-radius: 10px;
-            margin-top: 20px;
         }
     </style>
 </head>
 <body>
-    <div class="banner">
-        <img src="assets/logo.png" alt="Restaurant Logo">
-        <h1>Restaurant Name</h1>
+    <div class="overlay"></div>
+    <div class="container">
+        <h1>Margherita Pizza</h1>
+        <div class="dish">
+            <img src="https://sadafdarwish.github.io/COMP213/Individual%20Project/images/pizza.jpg" alt="Margherita Pizza">
+            <p><strong>Price:</strong> $12.99</p>
+            <p><strong>Ingredients:</strong> Cheese, Tomato, Basil</p>
+        </div>
     </div>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="menu.html">Menu</a></li>
-            <li><a href="contact_us.html">Contact Us</a></li>
-            <li><a href="location.html">Location</a></li>
-        </ul>
-    </nav>
-    <main>
-        <h2>Spaghetti Carbonara</h2>
-        <img src="assets/spaghetti.jpg" alt="Spaghetti Carbonara">
-        <p><strong>Ingredients:</strong> Pasta, Eggs, Cheese, Bacon</p>
-        <p><strong>Serving Size:</strong> 1 Plate</p>
-        <p><strong>Price:</strong> $12.99</p>
-    </main>
     <footer>
-        <p>© 2024 Your Name. Assignment 3 - COMP213. Images courtesy of Unsplash.</p>
+        <p>© 2024 Your Name | COMP213 Project | Images courtesy of Unsplash</p>
     </footer>
 </body>
 </html>

@@ -3,94 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Restaurant Location</title>
+    <title>Location - Restaurant Name</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f9f9f9;
+            font-family: 'Arial', sans-serif;
+            color: white;
             text-align: center;
+            background: url('https://sadafdarwish.github.io/COMP213/Individual%20Project/images/menu-background.jpg') no-repeat center center/cover;
         }
-        .banner {
-            background-color: #005f73;
-            color: #fff;
-            padding: 20px 0;
-        }
-        .banner img {
-            max-width: 100px;
-            display: block;
-            margin: 0 auto 10px;
-        }
-        .banner h1 {
-            margin: 0;
-        }
-        nav ul {
-            list-style: none;
-            margin: 0;
-            padding: 10px 0;
-            background-color: #0a9396;
-            display: flex;
-            justify-content: center;
-        }
-        nav ul li {
-            margin: 0 15px;
-        }
-        nav ul li a {
-            text-decoration: none;
-            color: #fff;
-            font-weight: bold;
-        }
-        nav ul li a:hover {
-            color: #94d2bd;
-        }
-        main {
-            margin: 20px;
-            padding: 20px;
-            background: #fff;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        iframe {
+
+        .overlay {
+            background: rgba(0, 0, 0, 0.6);
+            position: absolute;
+            top: 0;
+            left: 0;
             width: 100%;
-            height: 450px;
+            height: 100%;
+            z-index: -1;
+        }
+
+        .container {
+            margin-top: 100px;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .map {
+            margin: 20px auto;
+            width: 80%;
+            height: 400px;
             border: none;
             border-radius: 10px;
-            margin-top: 20px;
+            overflow: hidden;
         }
-        footer {
-            background-color: #005f73;
-            color: #fff;
-            padding: 10px;
+
+        .address {
             margin-top: 20px;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        footer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 10px;
         }
     </style>
 </head>
 <body>
-    <div class="banner">
-        <img src="assets/logo.png" alt="Restaurant Logo">
-        <h1>Restaurant Name</h1>
-    </div>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="menu.html">Menu</a></li>
-            <li><a href="contact_us.html">Contact Us</a></li>
-            <li><a href="location.html">Location</a></li>
-        </ul>
-    </nav>
-    <main>
-        <h2>Our Location</h2>
-        <p>We are located at:</p>
-        <p><strong>123 Food Street, Culinary City, FC 98765</strong></p>
+    <div class="overlay"></div>
+    <div class="container">
+        <h1>Our Location</h1>
+        <div class="address">
+            <p>123 Food Street, Culinary City, FC 98765</p>
+        </div>
         <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.8354345094577!2d-122.41941568468157!3d37.77492927975851!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808b2f07589b%3A0x8b3c8b8a8b9b7890!2s123%20Food%20Street!5e0!3m2!1sen!2sus!4v1635189022334!5m2!1sen!2sus" 
-            allowfullscreen=""
+            class="map" 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.8354345094577!2d-122.41941518468157!3d37.77492927975851!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808b2f07589b%3A0x8b3c8b8a8b9b7890!2s123%20Food%20Street!5e0!3m2!1sen!2sus!4v1635189022334!5m2!1sen!2sus" 
+            allowfullscreen="" 
             loading="lazy">
         </iframe>
-    </main>
+    </div>
     <footer>
-        <p>© 2024 Your Name. Assignment 3 - COMP213. Images courtesy of Unsplash.</p>
+        <p>© 2024 Your Name | COMP213 Project | Images courtesy of Unsplash</p>
     </footer>
 </body>
 </html>
