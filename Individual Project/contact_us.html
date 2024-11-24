@@ -24,6 +24,28 @@
             z-index: -1;
         }
 
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 10px 0;
+            z-index: 1;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: white;
+            margin: 0 15px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .navbar a:hover {
+            color: #d4a373;
+        }
+
         .container {
             margin-top: 100px;
             padding: 20px;
@@ -87,6 +109,17 @@
 </head>
 <body>
     <div class="overlay"></div>
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="details.html">Details</a>
+        <a href="contact_us.html">Contact Us</a>
+        <a href="location.html">Location</a>
+    </div>
+
+    <!-- Contact Us Form -->
     <div class="container">
         <h1>Contact Us</h1>
         <form>
@@ -108,8 +141,8 @@
             <p>Email: info@restaurant.com | Phone: (123) 456-7890</p>
         </div>
     </div>
+
+    <!-- Footer -->
     <footer>
         <p>© 2024 Your Name | COMP213 Project | Images courtesy of Unsplash</p>
-    </footer>
-</body>
-</html>
+    </f
